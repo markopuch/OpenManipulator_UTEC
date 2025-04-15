@@ -1,0 +1,13 @@
+COMANDOS
+
+Interfaz Interactiva:
+
+roslaunch open_manipulator_controller open_manipulator_controller.launch
+python3 /home/utec/robotis_ws/src/open_manipulator_interface/open_manipulator_interactive/src/control_ui.py
+
+
+
+Modo Espejo:
+
+roslaunch open_manipulator_controller open_manipulator_controller.launch dynamixel_usb_port:=/dev/ttyUSB0
+roslaunch open_manipulator_master_slave open_manipulator_master.launch usb_port:=/dev/ttyUSB1
